@@ -1,1 +1,0 @@
-cd csapp/Shell\ Lab/shlab-handout/
