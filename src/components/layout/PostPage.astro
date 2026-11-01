@@ -3,6 +3,8 @@ import type { CollectionEntry } from "astro:content";
 import { getPostUrlBySlug } from "@utils/url-utils";
 import PostCard from "@/components/layout/PostCard.astro";
 import { siteConfig } from "@/config";
+import I18nKey from "@/i18n/i18nKey";
+import { i18n } from "@/i18n/translation";
 
 const { page } = Astro.props;
 
@@ -38,6 +40,11 @@ const coverPositionClass =
   data-column-width={columnWidth}
   style={`--post-card-min-width: ${columnWidth}px;`}
 >
+  {page.data.length === 0 && (
+    <div class="card-base px-9 py-12 text-center text-(--text-muted)">
+      {i18n(I18nKey.noData)}
+    </div>
+  )}
   {
     page.data.map((entry: PostEntry, index: number) => (
       <PostCard
