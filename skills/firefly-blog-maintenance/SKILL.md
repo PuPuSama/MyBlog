@@ -21,8 +21,10 @@ description: 维护本仓库 PuPu-Blog 的 Firefly 主题配置、文章、动�
 - 邮箱：pupusama0@gmail.com；头像为 GitHub 头像的本地副本 `src/assets/images/avatar.jpg`；需要更新时先核实 GitHub 账号及图片实际格式。
 - 标签页图标：`public/favicon/Coco.svg`；配置路径为 `/favicon/Coco.svg`；同目录 `Coco.png` 是为 OpenGraph 和 Apple touch icon 保留的 PNG 版本，更换图标时一起更新。
 - 副标题和个人签名暂留空，不代写尚未确定的口号。
-- 默认壁纸、背景视频与音乐保留。动态、友链、相册、书签功能保留；没有用户内容时应展示空状态。
+- 默认壁纸保留；背景视频播放关闭，不保留视频地址。音乐使用 Meting 网易云歌单 `18551356303`，本地示例音乐暂保留但不参与在线模式播放。导航栏 Logo 暂保持原样。
+- 动态、友链、相册、书签功能保留；没有用户内容时应展示空状态。书签已添加“社区”分类及 `https://linux.do/`，不将用户新增内容当作模板示例清理。
 - 项目页和打赏页目前关闭。以上是当前配置基线，后续用户要求优先；执行前仍要读取真实文件。
+- GitHub Pages 部署工作流已移除；`.github/workflows/` 保留构建检查和代码质量检查，不自动向 GitHub Pages 部署。
 
 ## 配置与文档入口
 

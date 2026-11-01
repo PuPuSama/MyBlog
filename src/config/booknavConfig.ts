@@ -23,4 +23,17 @@ export const booknavPageConfig: BooknavPageConfig = {
 
 // 书签导航配置
 // 每个数组项是一个分类组，分类组内的 items 是该分类下的书签
-export const booknavConfig: BooknavGroup[] = [];
+export const booknavConfig: BooknavGroup[] = [
+	{
+		id: "community",
+		name: "社区",
+		icon: "material-symbols:forum",
+		items: [
+			{
+				title: "LINUX DO",
+				url: "https://linux.do/",
+				desc: "新的理想型社区",
+			},
+		],
+	},
+];

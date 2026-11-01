@@ -36,7 +36,7 @@ pnpm preview
 - 相册：`src/config/galleryConfig.ts`，照片放在 `public/gallery/{id}/`
 - 书签：`src/config/booknavConfig.ts`
 
-动态、友链、相册、书签页保留，目前暂无内容。项目页与打赏页关闭。默认壁纸和音乐保留。
+动态、友链、相册页保留，目前暂无内容。书签页已添加“社区 → LINUX DO”。项目页与打赏页关闭。默认壁纸保留，背景视频关闭；音乐使用网易云歌单 `18551356303`，通过 Meting API 加载。
 
 ## 维护指南
 
